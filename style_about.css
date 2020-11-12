@@ -1,0 +1,288 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+    /* outline: 1px solid black; */
+}
+
+html {
+    --scrollbarBG: #2b4448;
+    --thumbBG: #626e60;
+  }
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    overflow-x: hidden;
+    letter-spacing: 2px;
+    background-color:#2b4448;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+  /* -----------header area-----------*/
+header{
+  background-color:#2b4448;
+}
+
+.collapse{
+  font-family: 'Commissioner', sans-serif;
+  user-select: none;
+}
+
+.collapse a:hover{
+  color:#945D60;
+  fill: #945D60;
+  transition: .4s;
+}
+
+.navbar-toggler-icon{
+  -webkit-transition: .4s ease;
+      transition: .4s ease;
+}
+
+.menu-animation {
+-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+
+/* .navbar-toggler:focus {
+  outline: none;
+} */
+
+.fy {
+  color: #E5D29C;
+  fill: #E5D29C;
+}
+
+.fr{
+  color: #945D60;
+  fill: #945D60;
+}
+
+.fw{
+  color: #fff;
+  fill: #fff;
+}
+
+.fg{
+  color:#2b4448;
+  fill: #2b4448;
+}
+
+.fb{
+  color:#005CAF;
+  fill: #005CAF;
+}
+/*-----------lg screen-----------*/
+@media (min-width: 1025px) {
+  .navbar-brand{
+      margin-left: 3rem;
+      width: 80px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+ } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+ }
+
+  .space{
+  height: 95px;
+}
+
+  .nav-deco{
+    width: 5%;
+    left: 67%;
+    position: absolute;
+  }
+
+  .scroll{
+      font-size: 14px;
+      -webkit-writing-mode: vertical-rl;
+      font-family: 'Commissioner', sans-serif;
+      position: fixed;
+      right: 5%;
+      bottom: 0;
+      z-index: 100;
+  }
+
+  /* content */
+  h2{
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+  }
+
+  .intro p{
+    -webkit-writing-mode: vertical-rl;
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align:left
+  }
+
+}
+/*-----------md screen-----------*/
+@media (max-width: 1024px){
+  .navbar-brand{
+      margin-left: 1rem;
+      width: 60px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+  } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+  }
+
+  .nav-deco{
+    width: 5%;
+    left: 55%;
+    position: absolute;
+    display: none;
+  }
+
+  .scroll{
+      display: none;
+  }
+
+  /* content */
+  .about{
+    margin: 15% auto 10% auto;
+  }
+
+  h2{
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+  }
+
+  .intro p{
+    -webkit-writing-mode: vertical-rl;
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align:left
+  }
+  
+}
+
+@media (max-width: 576px){
+  .navbar-brand{
+      margin-left: 1rem;
+      width: 60px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+ } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+ }
+
+  .nav-deco{
+    width: 5%;
+    left: 55%;
+    position: absolute;
+    display: none;
+  }
+
+  .scroll{
+    display: none;
+  }
+
+  /* content */
+  .about{
+    margin: 30% auto 10% auto;
+  }
+
+  h2{
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+  }
+
+  .intro p{
+    -webkit-writing-mode: vertical-rl;
+    font-family: 'Noto Serif TC', serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    text-align:left
+  }
+
+}
+/*-----------content-----------*/
+.brand{
+  width: 45%;
+}
+
+.intro{
+  width: 45%;
+}
+
+/* ------------footer area------------ */
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  background-color: #1b171c;
+}
+
+.pad100{
+  padding-top: 100px;
+}
+
+.news-letter h5{
+  font-family: 'Noto Serif TC', serif;
+}
+
+.news-letter small{
+  font-family: 'Noto Serif TC', serif;
+}
+
+#email{
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.pad50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mag10 {
+  margin: 0 10px;
+}
+
+.address{
+  font-family: 'Noto Serif TC', serif;
+}

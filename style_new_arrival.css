@@ -1,0 +1,631 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+    /* outline: 1px solid black; */
+}
+
+html {
+    --scrollbarBG: #2b4448;
+    --thumbBG: #626e60;
+  }
+
+body::-webkit-scrollbar {
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    overflow-x: hidden;
+    letter-spacing: 2px;
+    background-color:#2b4448;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+/* -----------header area-----------*/
+header{
+  background-color:#2b4448;
+}
+
+.collapse{
+  font-family: 'Commissioner', sans-serif;
+  user-select: none;
+}
+
+.collapse a:hover{
+  color:#945D60;
+  fill: #945D60;
+  transition: .4s;
+}
+
+.navbar-toggler-icon{
+  -webkit-transition: .4s ease;
+      transition: .4s ease;
+}
+
+.menu-animation {
+-webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+
+.fy {
+  color: #E5D29C;
+  fill: #E5D29C;
+}
+
+.fr{
+  color: #945D60;
+  fill: #945D60;
+}
+
+.fw{
+  color: #fff;
+  fill: #fff;
+}
+
+.fg{
+  color:#2b4448;
+  fill: #2b4448;
+}
+
+.fb{
+  color:#005CAF;
+  fill: #005CAF;
+}
+
+/*-----------lg screen-----------*/
+@media (min-width: 1025px) {
+  .navbar-brand{
+      margin-left: 3rem;
+      width: 80px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+ } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+ }
+
+  .space{
+  height: 95px;
+}
+
+  .nav-deco{
+    width: 5%;
+    left: 26.5%;
+    position: absolute;
+  }
+
+  .scroll{
+      font-size: 14px;
+      -webkit-writing-mode: vertical-rl;
+      font-family: 'Commissioner', sans-serif;
+      position: fixed;
+      right: 5%;
+      bottom: 0;
+      z-index: 100;
+  }
+
+  /* side-nav*/
+  .side-nav ul{
+    list-style-type: none;
+  }
+
+  .side-nav li a{
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .product-price{
+    transition-duration: .6s;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .product-price-open{
+    height: 20px;
+  }
+
+  .product-name{
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  /* product detail */
+  .product-detail{
+    overflow-x: hidden;
+    display: none;
+    padding: 8% 0 0 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1030;
+  }
+
+  .product-detail .container{
+    width: 100%;
+    height: auto;
+    background-color: #2b4448;
+  }
+
+
+  .deco-text{
+    -webkit-writing-mode: vertical-rl;
+    color: #E5D29C;
+    opacity: .4;
+  }
+
+  .product-name-d{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .price{
+    color: #626e60;
+    font-size: 20px;
+    font-family: 'Commissioner', serif;
+  }
+
+  .product-des{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .table-bordered{
+    border: 1px solid black;
+  }
+
+  .cloth-size td{
+    padding: 5px 40px;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14px;
+  }
+
+  .cloth-size .cat{
+    background-color: #E5D29C;
+    color: #2b4448;
+  }
+
+  .cloth-size .info{
+    color: #E5D29C;
+  }
+
+  .cloth-info .note{
+    color: #E5D29C;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .buy{
+    padding: .3rem 5rem;
+    border: none;
+    background-color: #626e60;
+  }
+
+  .buy a{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .close {
+    color: #E5D29C;
+    float: right;
+    font-size: 35px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #172527;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bg-deco{
+    width: 25%;
+    top: 30%;
+    left: 2%;
+  }
+
+}
+
+/*-----------md screen-----------*/
+@media (max-width: 1024px){
+  .navbar-brand{
+    margin-left: 3rem;
+    width: 80px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+ } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+ }
+
+  .nav-deco{
+    width: 5%;
+    left: 33%;
+    position: absolute;
+  }
+
+  .scroll{
+      display: none;
+  }
+
+  /* side-nav */
+  .side-nav{
+    display: none;
+  }
+
+  .space{
+    height: 80px;
+  }
+
+  .product-name{
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  /* product detail */
+  .product-detail{
+    display: none;
+    padding-top: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1030;
+  }
+
+  .product-detail .container{
+    width: 100%;
+    height: auto;
+    background-color: #2b4448;
+  }
+
+  .product-pic{
+    width: 100%;
+  }
+
+  .deco-text{
+    -webkit-writing-mode: vertical-rl;
+    color: #E5D29C;
+    opacity: .4;
+  }
+
+  .product-name-d{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .price{
+    color: #626e60;
+    font-size: 20px;
+    font-family: 'Commissioner', serif;
+  }
+
+  .product-des{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .table-bordered{
+    border: 1px solid black;
+  }
+
+  .cloth-size td{
+    padding: 5px 40px;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14px;
+  }
+
+  .cloth-size .cat{
+    background-color: #E5D29C;
+    color: #2b4448;
+  }
+
+  .cloth-size .info{
+    color: #E5D29C;
+  }
+
+  .cloth-info .note{
+    color: #E5D29C;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .buy{
+    padding: .3rem 5rem;
+    border: none;
+    background-color: #626e60;
+  }
+
+  .buy a{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .close {
+    color: #E5D29C;
+    float: right;
+    font-size: 35px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #172527;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .bg-deco{
+    width: 40%;
+    top: 30%;
+    left: 2%;
+  }
+
+}
+
+/*-----------sm screen-----------*/
+@media (max-width: 576px){
+  .navbar-brand{
+      margin-left: 1rem;
+      width: 60px;
+  }
+
+  .navbar{
+    transition: .7s;
+    background-color: #2b4448;
+ } 
+
+  .navbar.hide{
+    transform: translateY(-110px);
+ }
+
+  .nav-deco{
+    width: 5%;
+    left: 55%;
+    position: absolute;
+    display: none;
+  }
+
+  .scroll{
+      display: none;
+  }
+
+  /* side-nav */
+  .side-nav{
+    display: none;
+  }
+
+  .space{
+    height: 50px;
+  }
+
+  .product-name{
+    font-size: 14px;
+  }
+
+  /* product detail */
+  .product-detail{
+    display: none;
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1030;
+  }
+
+  .product-detail .container{
+    text-align: center;
+    width: 60%;
+    height: auto;
+    background-color: #2b4448;
+  }
+
+  .product-pic{
+    width: 100%;
+  }
+
+  .deco-text{
+    -webkit-writing-mode: vertical-rl;
+    color: #E5D29C;
+    opacity: .4;
+    display: none;
+  }
+
+  .product-name-d{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .price{
+    color: #626e60;
+    font-size: 14px;
+    font-family: 'Commissioner', serif;
+  }
+
+  .product-des{
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .table-bordered{
+    border: 1px solid black;
+  }
+
+  .cloth-size{
+    margin: 0 auto;
+  }
+
+  .cloth-size td{
+    padding: 5px 10px;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 12px;
+  }
+
+  .cloth-size .cat{
+    background-color: #E5D29C;
+    color: #2b4448;
+  }
+
+  .cloth-size .info{
+    color: #E5D29C;
+  }
+
+  .cloth-info .note{
+    font-size: 12px;
+    color: #E5D29C;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  .buy{
+    padding: .2rem 3rem;
+    border: none;
+    background-color: #626e60;
+  }
+
+  .buy a{
+    color: #fff;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 12px;
+  }
+
+  .close {
+    color: #E5D29C;
+    float: right;
+    font-size: 35px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #172527;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bg-deco{
+    width: 100%;
+    top: 30%;
+    left: -10%;
+  }
+}
+
+/*------------line-up area------------*/
+.line-up{
+  position: relative;
+  transition-duration: .6s;
+  z-index: 1;
+}
+
+.cloth-card-b{
+  transform: scale(1.1);
+}  
+
+.cloth-card-s{
+  transform: scale(0.9);
+}  
+
+.op-filter{
+  opacity: 0.3;
+}
+
+.line{
+  background:
+  linear-gradient(-50deg, transparent 49.7%, #E5D29C 50%, #E5D29C 50%, transparent 50.5%);
+}
+
+.cloth-card{
+  transition-duration: .6s;
+}
+
+.cloth-card img{
+  width: 70%;
+}
+
+.product-name{
+  font-family: 'Noto Serif TC', serif;
+  letter-spacing: 2px;
+  color: #E5D29C;
+}
+
+.product-price{
+  font-family: 'Noto Serif TC', serif;
+  color: #fff;
+  font-size: 12px;
+}
+
+.page-link{
+  font-family: 'Commissioner', sans-serif;
+  color: #E5D29C;
+  background-color: transparent;
+  border: none;
+}
+
+.page-link:hover {
+  background-color: #E5D29C;
+  color: #2b4448;
+}
+
+/* ------------footer area------------ */
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  background-color: #1b171c;
+}
+
+.pad100{
+  padding-top: 100px;
+}
+
+.news-letter h5{
+  font-family: 'Noto Serif TC', serif;
+}
+
+.news-letter small{
+  font-family: 'Noto Serif TC', serif;
+}
+
+#email{
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.pad50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mag10 {
+  margin: 0 10px;
+}
+
+.address{
+  font-family: 'Noto Serif TC', serif;
+}
